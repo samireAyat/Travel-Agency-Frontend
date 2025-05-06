@@ -1,55 +1,47 @@
-
-#particles-js{
-  height: 650px;
+#particles-js {
+  max-height: 390px;
   width: 100%;
-  background-color: #58AEC4;
+  background-color: #58aec4;
   background-image: url("src/assets/images/Background.png");
   background-size: cover;
   position: relative;
 }
 
-.container{
+.container {
   pointer-events: none;
-
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 525px;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   text-align: center;
-  padding: 180px 0;
-
-
 }
 
-#heading1{
+#heading1 {
   cursor: pointer;
 
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-
 }
 
 #heading1 p {
   height: 100px;
   font-size: 30px;
-
 }
 
-#logo{
+#logo {
   display: flex;
   flex-direction: row;
   width: 20%;
   padding: 5px;
-
 }
 
-#logo h1{
+#logo h1 {
   text-align: center;
   margin: auto;
   color: #eff8fd;
@@ -58,13 +50,11 @@
   font-size: 110px;
 }
 
-#buttons{
+#buttons {
   pointer-events: none;
   display: grid;
   justify-content: center;
   grid-auto-flow: column;
-
-
 }
 
 button {
@@ -72,15 +62,14 @@ button {
   width: 150px;
   margin: 5px;
   color: #eff8fd;
-
 }
 
-#right-btn{
+#right-btn {
   margin-left: 40px;
   margin-right: 40px;
 }
 
-.btn-text{
+.btn-text {
   font-family: "Rubik";
 }
 
@@ -105,7 +94,7 @@ button {
   top: 22px;
 }
 
-#scroll-down{
+#scroll-down {
   opacity: 0;
   font-size: 20px;
   transition: 0.5s;
@@ -147,39 +136,36 @@ button {
   transform: translateX(-6px);
 }
 
-.slide:hover #scroll-down{
+.slide:hover #scroll-down {
   opacity: 1;
   transform: translateY(-6px);
 }
 
-#logo-small{
+#logo-small {
   display: none;
 }
-@media screen and (max-width: 550px){
-
-
-
-  .container{
+@media screen and (max-width: 550px) {
+  .container {
     margin-top: 30px;
     display: flex;
     justify-content: center;
   }
-  #heading1 #logo{
+  #heading1 #logo {
     display: none;
   }
 
-  #logo-small{
+  #logo-small {
     display: flex;
     margin-left: 50px;
   }
 
-  #logo-small h1{
+  #logo-small h1 {
     color: #eff8fd;
     font-family: Rubik;
     font-size: 100px;
   }
 
-  #buttons{
+  #buttons {
     display: grid;
     justify-content: left;
     margin-top: 50px;
@@ -188,11 +174,11 @@ button {
     pointer-events: all;
   }
 
-  #right-btn{
+  #right-btn {
     margin: 0;
   }
+}
 
-
-
-
+.particles-js-canvas-el {
+  background-color: red;
 }

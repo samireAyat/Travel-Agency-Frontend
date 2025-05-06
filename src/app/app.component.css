@@ -1,3 +1,7 @@
-*{
-  font-family: 'Archivo', sans-serif;
+* {
+  font-family: "Archivo", sans-serif;
+}
+
+.particles-js-canvas-el {
+  background-color: white !important;
 }
